@@ -1,1 +1,440 @@
 /* Use your CSS from RWD - I here.  IF you don't have CSS, use the solution CSS from RWD - I*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0 auto;
+	height: 100%;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+html {
+    font-size: 62.5%;
+}
+.maincontainer {
+    max-width: 880px;
+    margin: 0 auto;
+}
+.navigation {
+    font-size: 1.7rem;
+	color: grey;
+	display: flex;
+	flex-direction: row;
+	padding: 0px;
+	text-decoration: none;
+    margin: 60px auto;
+	justify-content: space-evenly;
+}
+.navigation2 {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 62.5%;
+    /* justify-content: space-evenly; */
+}
+.navigationItems {
+	color: grey;
+	padding: 2.13636%;
+	text-decoration: none;
+	margin: 0.56818%;
+}
+.logo {
+    order: 1;
+}
+.head {
+	position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    padding: 30px 3.40909% 30px 3.40909%;
+    font-size: 7.7rem;
+    margin: 30px 3.40909% ;
+}
+.on {
+    padding: 0 24.0384%;
+}
+.demand {
+    padding: 0 4.80769%;
+}
+.image {
+	margin-bottom: 0px;
+    margin-top: 0px;
+}
+.textpic {
+	display: flex;
+	flex-direction: row;
+    justify-content: center;
+	margin: 0 auto;
+}
+hr {
+    text-align: center;
+}
+.getit {
+	padding: 5px 3.4090909%;
+	font-size: 2rem;
+	font-family: serif;
+	margin: 0 0 0 13%;
+    border-width: 0.56818%;
+    border: solid dimgray;
+}
+.topdata {
+    width: 100%;
+	font-size: 2.1rem;
+    display: flex;
+    flex-wrap: wrap;
+    text-align:left;
+    margin: 20px auto;
+}
+.para3 {
+    margin: 0 auto;
+}
+.main-image {
+    width: 95.45455%;
+    margin: 0 auto;
+}
+.bottomdata {
+	display: flex;
+	flex-direction: row;
+	font-size: 2.1rem;
+	position: relative;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.para4 {
+    padding: 2.272727%;
+    
+}
+.para5 {
+    padding: 2.272727%;
+    
+}
+.para6 {
+    padding: 2.272727%; 
+}
+.para1 {
+	padding: 2.272727%;
+	width: 48%;
+}
+.para2 {
+	padding: 2.272727%;
+	width: 48%;
+}
+.address {
+	font-size: 2.1rem;
+    margin: 40px 0;
+    padding: 2.272727%
+}
+footer {
+	text-align: center;
+}
+/* Next webpage codes */
+.mainData {
+	margin: 50px 100px 50px 100px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-content: space-around;
+}
+.fullBody {
+	margin: 0 10% 0 10%;
+	align-content: center;
+}
+.paras1 {
+	margin: 0 0 15px 0;
+	background-color: rgba(230, 228, 228, 0.61);
+	padding: 10px;
+	width: 48%;
+	height: 200px;
+	border: 1px solid gray;
+}
+.paras2 {
+	margin: 0 0 15px 0;
+	background-color: rgba(230, 228, 228, 0.61);
+	padding: 10px;
+	width: 48%;
+	height: 200px;
+	border: 1px solid gray;
+}
+.paras3 {
+	margin: 15px 0 15px 0;
+	background-color: rgba(230, 228, 228, 0.61);
+	padding: 10px;
+	width: 48%;
+	height: 200px;
+	border: 1px solid gray;;
+}
+.paras4 {
+	margin: 15px 0 15px 0;
+	background-color: rgba(230, 228, 228, 0.61);
+	padding: 10px;
+	width: 48%;
+	height: 200px;
+	border: 1px solid gray;
+}
+.paras5 {
+	margin: 15px 0 0 0;
+	background-color: rgba(230, 228, 228, 0.61);
+	padding: 10px;
+	width: 48%;
+	height: 200px;
+	border: 1px solid gray;
+}
+.paras6 {
+	margin: 15px 0 0 0;
+	background-color: rgba(230, 228, 228, 0.61);
+	padding: 10px;
+	width: 48%;
+	height: 200px;
+	border: 1px solid gray;
+}
+.heading {
+	margin: 50px 100px 50px 100px;
+	display: flex;
+	flex-wrap: wrap;
+}
+.services-header-img {
+	margin: 50px 100px 50px 100px;
+}
+.lastData {
+	margin: 50px 100px 50px 100px;
+}
+.lineHr {
+	width: 82%;
+}
+.button {
+	padding: 5px 20px 5px 20px;
+	background-color: white;
+}
+.lastData {
+	padding: 10px 20px 10px 0px;
+	display: flex;
+	flex-direction: row;
+}
+.bigFont {
+	font-size: 23px;
+}
+ul {
+	list-style-type: square;
+    list-style-position: inside;
+}
+/* 1st webpage continued */
+@media (max-width:800px) {
+    
+    .logo {
+        order: 0;
+        align-self: flex-start;
+        margin: 0px auto;
+        align-items: flex-start;
+    }
+    .image {
+        display: none;
+    }
+    .lineHr {
+        width: 95%;
+    }
+    .textpic {
+        margin: 0 auto;
+        font-size: 2.8rem;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .getit {
+        font-size: 2.3rem;
+        display: flex;
+        width: 24%;
+        justify-content: center;
+        margin: 0 auto;
+        padding: 0;
+    }
+    .navigation {
+        display: flex;
+        flex-direction: column;  
+    }
+    .navigation2 {
+        flex-direction: row;
+        align-content: flex-end;
+        display: flex;
+        justify-content: space-between;
+        margin: 5.47588% auto;
+        margin-bottom: 0%;
+    }
+    .topdata {
+        width: 100%;
+        font-size: 1.8rem;
+        margin: 0 auto;
+    }
+    .para1 {
+        width: 49.5436%;
+    }
+    .para2 {
+        width: 49.5436%;
+    }
+    .bottomdata {
+        width: 100%;
+        font-size: 1.8rem;
+        margin: 0 auto;
+    }
+    .para3 {
+        margin: 0 auto;
+    }
+    .main-image {
+        width: 93.875%;
+        margin: 0 2.60756%;
+    }
+    .para4 {
+        width: 39.1134%;
+    }
+    .para5 {
+        width: 39.1134%;
+    }
+    .para6 {
+        width: 39.1134%;
+    }
+    .address {
+        padding-left: 2.272727%;
+        margin: 0 auto;
+        margin-left: 0%;
+    }
+    .head {
+        margin: 0;
+        padding: 30px 3.91134% 30px 10.43024%;
+    }
+    
+}
+
+@media (max-width:500px) {
+    .navigation2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-content: space-around;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .logo {
+        order: 0;
+        margin: 0 auto;
+        margin-bottom: 40px;
+        align-self: flex-start;
+
+    }
+    .navigation {
+        width: 80%;
+    }
+    navigationItems {
+        border: 1px solid gray;
+    }
+    .getit {
+        font-size: 1.8rem;
+        width: 30%;
+        padding: 1.03519%;
+    }
+    .topdata {
+        flex-wrap: wrap;
+    }
+    .para1 {
+        margin: 0 auto;
+        padding: 2.0738%;
+        width: 98%;
+    }
+    .para2 {
+        margin: 0 auto;
+        padding: 2.0738%;
+        width: 98%;
+    }
+    .para3 {
+        margin: 0 auto;
+    }
+    .main-image {
+        width: 98%;
+        margin: 0 auto;
+        padding: 2.0738%;
+    }
+    .bottomdata {
+        margin: 0 auto;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .para4 {
+        margin: 0 auto;
+        padding: 2.0738%;
+        width: 98%;
+    }
+    .para5 {
+        margin: 0 auto;
+        padding: 2.0738%;
+        width: 98%;
+    }
+    .para6 {
+        margin: 0 auto;
+        padding: 2.0738%;
+        width: 98%;
+    }
+    a {
+        border-bottom: 1px solid gray;
+        width:100%;
+    }
+    .head {
+        padding: 30px 6.2214% 30px 16.5904%;
+    }
+}
